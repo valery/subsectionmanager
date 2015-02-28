@@ -21,13 +21,15 @@
 .field-subsectionmanager .frame iframe {
 	width: 100%;
 	opacity: 1;
+	padding-top:25px;
+	padding-bottom:25px;
 	visibility: visible;
 	-webkit-transition: opacity .25s ease-in;
 	-moz-transition: opacity .25s ease-in;
 	-ms-transition: opacity .25s ease-in;
 	-o-transition: opacity .25s ease-in;
 	transition: opacity .25s ease-in;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .field-subsectionmanager .frame iframe.loading,
@@ -58,7 +60,7 @@
 .field-subsectionmanager .browser input {
 	position: relative;
 	margin: 0;
-	background: #FFF url(../../../symphony/assets/img/arrows.png) right -34px no-repeat;
+	background: #FFF url(images/arrows.png) right -34px no-repeat;
 }
 
 .field-subsectionmanager .browser.opened input {

@@ -230,7 +230,13 @@
 				
 				// Resize item
 				subsection.find('#contents > form').on('resize.subsectionmanager', function(event, init) {
-					var height = $(this).outerHeight();
+					var height = $(this).outerHeight()+40;
+
+					/*
+						Little hack to fix symphony 2.4
+					*/
+					iframe.parent().parent().css('max-height', '');
+					
 
 					if(init == true || (!iframe.is('.loading') && content.data('height') !== height && height !== 0)) {
 						resize(content, iframe, body, height);
